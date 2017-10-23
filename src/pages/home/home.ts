@@ -6,9 +6,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  cucumber: boolean;
   constructor(public navCtrl: NavController) {
 
   }
-
+  updateCucumber() {
+    console.log('Cucumbers new state:' + this.cucumber);
+  }
 }
